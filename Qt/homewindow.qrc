@@ -1,0 +1,33 @@
+<RCC>
+    <qresource prefix="/new/prefix1">
+        <file>account.png</file>
+        <file>back white.png</file>
+        <file>back.png</file>
+        <file>exer_balance.PNG</file>
+        <file>exer_Flexibility.PNG</file>
+        <file>exer_strength.PNG</file>
+        <file>healthylifestyle.jpg</file>
+        <file>hls.png</file>
+        <file>hls2.jpg</file>
+        <file>hls3.png</file>
+        <file>hls4.png</file>
+        <file>Home - Copy.png</file>
+        <file>Home.png</file>
+        <file>mascot (1).png</file>
+        <file>mascot (2).png</file>
+        <file>mascot (3).png</file>
+        <file>mascot (4).png</file>
+        <file>mascot (5).png</file>
+        <file>mascot (6).png</file>
+        <file>noun_Warmup.png</file>
+        <file>person - Copy.png</file>
+        <file>person.png</file>
+        <file>player.png</file>
+        <file>project_aegis_launcher.png</file>
+        <file>Rewards.png</file>
+        <file>rewards__002_redeem.png</file>
+        <file>rewards__003_vouchers.png</file>
+        <file>rewards__004_lookout.png</file>
+        <file>skip button.png</file>
+    </qresource>
+</RCC>

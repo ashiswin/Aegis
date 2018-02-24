@@ -28,11 +28,18 @@ SOURCES += \
         mainwindow.cpp
 
 HEADERS += \
-        mainwindow.h
+        mainwindow.h \
+    accountspage.h
 
 FORMS += \
         mainwindow.ui \
-    homepage.ui
+    homepage.ui \
+    routineselectwindow.ui \
+    accountswindow.ui \
+    rewardswindow.ui
 
 RESOURCES += \
-    homepage.qrc
+    routineselectwindow.qrc \
+    rewardswindow.qrc \
+    homewindow.qrc \
+    accountswindow.qrc
