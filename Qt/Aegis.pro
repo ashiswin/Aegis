@@ -31,4 +31,8 @@ HEADERS += \
         mainwindow.h
 
 FORMS += \
-        mainwindow.ui
+        mainwindow.ui \
+    homepage.ui
+
+RESOURCES += \
+    homepage.qrc
