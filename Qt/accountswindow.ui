@@ -467,20 +467,20 @@
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="PAge">
+   <widget class="QLabel" name="Page">
     <property name="geometry">
      <rect>
       <x>-20</x>
       <y>110</y>
       <width>1951</width>
-      <height>961</height>
+      <height>971</height>
      </rect>
     </property>
     <property name="text">
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>Accounts.PNG</pixmap>
+     <pixmap>Accounts2.PNG</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -520,7 +520,7 @@
      <string>Logout</string>
     </property>
    </widget>
-   <zorder>PAge</zorder>
+   <zorder>Page</zorder>
    <zorder>label_3</zorder>
    <zorder>BackButton_Button</zorder>
    <zorder>frame_2</zorder>
