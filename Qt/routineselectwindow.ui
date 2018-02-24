@@ -64,7 +64,7 @@
      <string notr="true">Balance</string>
     </property>
     <property name="icon">
-     <iconset resource="homepage.qrc">
+     <iconset resource="homewindow.qrc">
       <normaloff>:/new/prefix1/exer_balance.PNG</normaloff>:/new/prefix1/exer_balance.PNG</iconset>
     </property>
     <property name="iconSize">
@@ -106,7 +106,7 @@
      <string notr="true">Strength</string>
     </property>
     <property name="icon">
-     <iconset resource="homepage.qrc">
+     <iconset resource="homewindow.qrc">
       <normaloff>:/new/prefix1/exer_strength.PNG</normaloff>:/new/prefix1/exer_strength.PNG</iconset>
     </property>
     <property name="iconSize">
@@ -148,7 +148,7 @@
      <string notr="true">Flexibility</string>
     </property>
     <property name="icon">
-     <iconset resource="homepage.qrc">
+     <iconset resource="homewindow.qrc">
       <normaloff>:/new/prefix1/exer_Flexibility.PNG</normaloff>:/new/prefix1/exer_Flexibility.PNG</iconset>
     </property>
     <property name="iconSize">
@@ -506,31 +506,6 @@
     <zorder>ExercisePageLabel_Words</zorder>
     <zorder>label</zorder>
    </widget>
-   <widget class="QLabel" name="BackButton_Icon">
-    <property name="geometry">
-     <rect>
-      <x>170</x>
-      <y>160</y>
-      <width>81</width>
-      <height>81</height>
-     </rect>
-    </property>
-    <property name="layoutDirection">
-     <enum>Qt::LeftToRight</enum>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background: transparent</string>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap>Home - Copy.png</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
    <widget class="QPushButton" name="BackButton_Button">
     <property name="geometry">
      <rect>
@@ -546,51 +521,15 @@
     <property name="text">
      <string/>
     </property>
-   </widget>
-   <widget class="QLabel" name="label_2">
-    <property name="geometry">
-     <rect>
-      <x>170</x>
-      <y>250</y>
-      <width>191</width>
-      <height>20</height>
-     </rect>
+    <property name="icon">
+     <iconset>
+      <normaloff>Home - Copy.png</normaloff>Home - Copy.png</iconset>
     </property>
-    <property name="font">
-     <font>
-      <pointsize>14</pointsize>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background: transparent;color:white</string>
-    </property>
-    <property name="text">
-     <string>Back to Home</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="BackButton_Icon_2">
-    <property name="geometry">
-     <rect>
-      <x>100</x>
-      <y>240</y>
-      <width>51</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="layoutDirection">
-     <enum>Qt::LeftToRight</enum>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background: transparent</string>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap>back white.png</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
+    <property name="iconSize">
+     <size>
+      <width>100</width>
+      <height>100</height>
+     </size>
     </property>
    </widget>
    <widget class="QLabel" name="Mascot">
@@ -660,9 +599,6 @@
    <zorder>btnStrength</zorder>
    <zorder>btnFlexibility</zorder>
    <zorder>frame_2</zorder>
-   <zorder>BackButton_Icon</zorder>
-   <zorder>label_2</zorder>
-   <zorder>BackButton_Icon_2</zorder>
    <zorder>Mascot</zorder>
    <zorder>SpeechBubble</zorder>
    <zorder>label_3</zorder>
@@ -670,7 +606,7 @@
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <resources>
-  <include location="homepage.qrc"/>
+  <include location="homewindow.qrc"/>
  </resources>
  <connections/>
 </ui>

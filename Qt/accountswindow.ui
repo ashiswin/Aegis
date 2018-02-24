@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>RoutineSelectWindow</class>
- <widget class="QMainWindow" name="RoutineSelectWindow">
+ <class>accountswindow</class>
+ <widget class="QMainWindow" name="accountswindow">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -384,7 +384,7 @@
     <property name="geometry">
      <rect>
       <x>170</x>
-      <y>160</y>
+      <y>180</y>
       <width>81</width>
       <height>81</height>
      </rect>
@@ -421,66 +421,20 @@
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="label_2">
-    <property name="geometry">
-     <rect>
-      <x>170</x>
-      <y>250</y>
-      <width>191</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>14</pointsize>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background: transparent;color:white</string>
-    </property>
-    <property name="text">
-     <string>Back to Home</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="BackButton_Icon_2">
-    <property name="geometry">
-     <rect>
-      <x>100</x>
-      <y>240</y>
-      <width>51</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="layoutDirection">
-     <enum>Qt::LeftToRight</enum>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background: transparent</string>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap>back white.png</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
    <widget class="QLabel" name="Page">
     <property name="geometry">
      <rect>
       <x>-20</x>
       <y>110</y>
       <width>1951</width>
-      <height>971</height>
+      <height>981</height>
      </rect>
     </property>
     <property name="text">
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>Accounts2.PNG</pixmap>
+     <pixmap>Accounts.PNG</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -525,8 +479,6 @@
    <zorder>BackButton_Button</zorder>
    <zorder>frame_2</zorder>
    <zorder>BackButton_Icon</zorder>
-   <zorder>label_2</zorder>
-   <zorder>BackButton_Icon_2</zorder>
    <zorder>pushButton</zorder>
   </widget>
  </widget>

@@ -36,10 +36,17 @@ FORMS += \
     homepage.ui \
     routineselectwindow.ui \
     accountswindow.ui \
-    rewardswindow.ui
+    rewardswindow.ui \
+    strengthcompletewindow.ui \
+    strengthstartwindow.ui \
+    strength1prepwindow.ui \
+    strength1start.ui \
+    strength2prepwindow.ui \
+    strength2start.ui
 
 RESOURCES += \
     routineselectwindow.qrc \
     rewardswindow.qrc \
     homewindow.qrc \
-    accountswindow.qrc
+    accountswindow.qrc \
+    strengthcompletewindow.qrc
