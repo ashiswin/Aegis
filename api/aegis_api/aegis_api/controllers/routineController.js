@@ -10,14 +10,15 @@ con.connect();
 
 exports.read_routine_from_id = function (req, res, next) {
     // Return all Routine
-    if (typeof (req.query.id) == "undefined") {
-        var query = "SELECT * FROM Routine WHERE isDeleted = FALSE";
+    if (typeof(req.query) === "undefined" || typeof (req.query.id) === "undefined") {
+        var query = "SELECT * FROM Routine WHERE `isDeleted` = FALSE";
     }
     //Return only the Routine with the given routineId
     else {
         var query = "SELECT * FROM Routine WHERE `id` = \"" +
-            req.query.id + "\" AND isDeleted = FALSE";
+            req.query.id + "\" AND `isDeleted` = FALSE";
     }
+    console.log(query);
     con.query(query, function (err, result) {
         if (err) throw err;
         res.json(result);
@@ -26,7 +27,7 @@ exports.read_routine_from_id = function (req, res, next) {
 }
 
 exports.read_routine_by_workout = function (req, res, next) {
-    var check_query = "SELECT routineId FROM RoutineWorkoutRelationship WHERE `workoutId` = \'" + req.query.workoutId + "\' AND isDeleted = FALSE";
+    var check_query = "SELECT routineId FROM RoutineWorkoutRelationship WHERE `workoutId` = \'" + req.query.workoutId + "\' AND `isDeleted` = FALSE";
     con.query(check_query, function (err, result) {
         if (err) throw err;
         if (result != null && result.length > 0) {

@@ -9,7 +9,13 @@ var con = mysql.createConnection({
 con.connect();
 
 exports.read_user_from_id = function (req, res, next) {
-    con.query("SELECT * FROM User WHERE `id` = \"" + req.query.nric + "\" AND isDeleted = FALSE", function (err, result) {
+    if (typeof (req.query) === "undefined" || typeof (req.query.id) === "undefined") {
+        var query = "SELECT * FROM User WHERE isDeleted = FALSE";
+    }
+    else {
+        var query = "SELECT * FROM User WHERE `id` = \"" + req.query.id + "\" AND isDeleted = FALSE" 
+    }
+    con.query(query, function (err, result) {
         if (err) throw err;
         res.json(result);
         console.log(result);
@@ -30,6 +36,9 @@ exports.add_score = function (req, res, next) {
         var user_query = "SELECT * FROM User WHERE `id` = \'" + req.query.userId + "\'";
         con.query(user_query, function (err, result) {
             if (err) throw err;
+            if (typeof (result[0]) === "undefined") {
+                res.send("Invalid userId");
+            }
             var new_score = parseInt(result[0].points) + parseInt(req.query.score);
             var update_query = "UPDATE User SET `points` = \'" + new_score + "\' WHERE `id` = \'" + req.query.userId + "\'";
             console.log(result);

@@ -27,8 +27,10 @@ exports.read_workout_from_id = function (req, res, next) {
 
 exports.read_workout_by_routine = function (req, res, next) {
     var check_query = "SELECT workoutId FROM RoutineWorkoutRelationship WHERE `routineId` = \'" + req.query.routineId + "\' AND isDeleted = FALSE";
+    console.log(check_query);
     con.query(check_query, function (err, result) {
         if (err) throw err;
+        console.log(result);
         if (result != null && result.length > 0) {
             var workoutIds = [];
             for (i = 0; i < result.length; i++) {
