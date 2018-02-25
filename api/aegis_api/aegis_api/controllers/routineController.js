@@ -54,14 +54,15 @@ exports.create_routine = function (req, res, next) {
         + req.query.name + "\', \'" + req.query.type + "\')";
     con.query(query, function (err, result) {
         if (err) throw err;
-        if (result.affectedRows == 1) {
-            query2 = "SELECT * FROM Routine WHERE `id` = \"" + result.insertId + "\"";
+        if (result.affectedRows === 1) {
+            var query2 = "SELECT * FROM Routine WHERE `id` = \"" + result.insertId + "\"";
             console.log(query2);
             con.query(query2, function (err2, result2) {
                 res.json(result2)
             })
         }
         else {
+            console.log("Cannot find created Routine");
             res.send("Cannot find created Routine");
         }
     });

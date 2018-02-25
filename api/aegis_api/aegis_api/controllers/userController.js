@@ -49,7 +49,7 @@ exports.add_score = function (req, res, next) {
                 if (typeof (result2) === "undefined") {
                     res.send("Row not updated")
                 }
-                else if (result2.affectedRows == 1) {
+                else if (result2.affectedRows === 1) {
                     return_query = "SELECT * FROM User WHERE `id` = \'" + req.query.userId + "\'";
                     con.query(return_query, function (err3, result3) {
                         res.json(result3);

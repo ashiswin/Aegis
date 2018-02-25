@@ -10,7 +10,7 @@ con.connect();
 
 exports.read_result_from_id = function (req, res, next) {
     // Return all Result
-    if (typeof (req.query.id) == "undefined") {
+    if (typeof(req.query) === "undefined" || typeof (req.query.id) === "undefined") {
         var query = "SELECT * FROM Result WHERE isDeleted = FALSE";
     }
     //Return only the Result with the given routineId
@@ -20,16 +20,16 @@ exports.read_result_from_id = function (req, res, next) {
     }
     con.query(query, function (err, result) {
         if (err) throw err;
-        res.json(result);
         console.log(result);
+        res.json(result);
     });
 }
 
 exports.read_result_by_user = function (req, res, next) {
     var query = "SELECT * FROM Result WHERE userId = \'" + req.query.userId + "\' AND isDeleted = FALSE";
     con.query(query, function (err, result) {
-        res.json(result);
         console.log(result);
+        res.json(result);
     });
 }
 
@@ -42,14 +42,16 @@ exports.create_result = function (req, res, next) {
         req.query.routineId + "\')";
     con.query(query, function (err, result) {
         if (err) throw err;
-        if (result.affectedRows == 1) {
-            query2 = "SELECT * FROM Result WHERE `id` = \"" + result.insertId + "\"";
+        if (result.affectedRows === 1) {
+            var query2 = "SELECT * FROM Result WHERE `id` = \"" + result.insertId + "\"";
             console.log(query2);
             con.query(query2, function (err2, result2) {
-                res.json(result2)
+                console.log(result2);
+                res.json(result2);
             })
         }
         else {
+            console.log(query2);
             res.send("Cannot find created Result");
         }
     });

@@ -10,7 +10,7 @@ con.connect();
 
 exports.read_workout_from_id = function (req, res, next) {
     // Return all Workout
-    if (typeof (req.query.id) == "undefined") {
+    if (typeof(req.query) === "undefined" || typeof (req.query.id) === "undefined") {
         var query = "SELECT * FROM Workout WHERE isDeleted = FALSE";
     }
     // Return only Workout with given workoutId
