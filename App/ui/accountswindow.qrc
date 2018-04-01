@@ -1,0 +1,10 @@
+<RCC>
+    <qresource prefix="/new/prefix1">
+        <file>Accounts.PNG</file>
+        <file>HDSP Chart.png</file>
+        <file>chart.png</file>
+        <file>armextensionfull.png</file>
+        <file>sitstandfull.png</file>
+        <file>hipextensionfull.png</file>
+    </qresource>
+</RCC>

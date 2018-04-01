@@ -1,0 +1,17 @@
+<RCC>
+    <qresource prefix="/new/prefix1">
+        <file>project_aegis_launcher.png</file>
+        <file>exer_balance.PNG</file>
+        <file>exer_strength.PNG</file>
+        <file>exer_Flexibility.PNG</file>
+    </qresource>
+    <qresource prefix="/new/prefix2">
+        <file>exer_balance.PNG</file>
+    </qresource>
+    <qresource prefix="/new/prefix3">
+        <file>exer_Flexibility.PNG</file>
+    </qresource>
+    <qresource prefix="/new/prefix4">
+        <file>exer_strength.PNG</file>
+    </qresource>
+</RCC>

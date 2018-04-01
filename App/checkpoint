@@ -1,0 +1,2 @@
+model_checkpoint_path: "sitstand_predictor_model"
+all_model_checkpoint_paths: "sitstand_predictor_model"

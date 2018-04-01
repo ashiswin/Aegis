@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/new/prefix1">
+        <file>project_aegis_launcher.png</file>
+        <file>ArmExtension.png</file>
+        <file>SitToStand.png</file>
+    </qresource>
+</RCC>

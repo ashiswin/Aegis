@@ -1,0 +1,7 @@
+classes 4
+startact 0
+endact 1
+0 sit.txt
+1 stand.txt
+2 sitinvalid.txt
+3 standinvalid.txt
